@@ -2,15 +2,22 @@
 
 namespace VehicleComController
 {
-    public class ComController
+    public static class ComController
 
     {
         static void Main(string[] args)
         {
+            // Test if input arguments were suplied.
+            if (string.IsNullOrEmpty(args[0]))
+            {
+                Console.WriteLine("Please enter a port name as an argument.");
+                return;
+            }
+
             // Set up the serial port to read from
             SerialPort serialPortControlUnits = new()
             {
-                PortName = "COM2", // Change COM port as necessary
+                PortName = args[0], // COM port as an argument
                 BaudRate = 9600,
                 Parity = Parity.None,
                 DataBits = 8,

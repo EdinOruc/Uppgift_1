@@ -4,14 +4,21 @@ using System.IO.Ports;
 
 namespace BatteryAndGPSComponentSimulator
 {
-    public class COMSimulator
+    public static class ComSimulator
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
+            // Test if input arguments were suplied.
+            if (string.IsNullOrEmpty(args[0]))
+            {
+                Console.WriteLine("Please enter a port name as an argument.");
+                return;
+            }
+
             // Set up the serial port
             SerialPort serialPort = new SerialPort
             {
-                PortName = "COM1", // Change COM port as necessary
+                PortName = args[0], // COM port as an argument
                 BaudRate = 9600,
                 Parity = Parity.None,
                 DataBits = 8,
