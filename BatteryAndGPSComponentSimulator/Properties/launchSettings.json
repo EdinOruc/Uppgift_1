@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BatteryAndGPSComponentSimulator": {
+      "commandName": "Project",
+      "commandLineArgs": "COM1"
+    }
+  }
+}

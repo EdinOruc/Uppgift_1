@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VehicleComController": {
+      "commandName": "Project",
+      "commandLineArgs": "COM2"
+    }
+  }
+}
