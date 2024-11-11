@@ -49,3 +49,5 @@ Port-namn för simulator och kontroller ska vara konfigurerbara.
 * Kör om.
 
 # Mina anteckningar
+
+### Ändrad multiple startup projects In Solution Explorer
