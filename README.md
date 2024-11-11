@@ -47,3 +47,5 @@ Port-namn för simulator och kontroller ska vara konfigurerbara.
 * Kör om applikationerna med inställningar från filen. Byt port mha emulator, konfigurera om portarna i json-filerna.
 
 * Kör om.
+
+# Mina anteckningar
