@@ -8,7 +8,7 @@ namespace VehicleComController
         static void Main(string[] args)
         {
             // Test if input arguments were suplied.
-            if (string.IsNullOrEmpty(args[0]))
+            if(args.Length == 0)
             {
                 Console.WriteLine("Please enter a port name as an argument.");
                 return;

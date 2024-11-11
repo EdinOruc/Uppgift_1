@@ -50,4 +50,6 @@ Port-namn för simulator och kontroller ska vara konfigurerbara.
 
 # Mina anteckningar
 
-### Ändrad setup till multiple startup projects In Solution Explorer
+* Ändrad setup till multiple startup projects In Solution Explorer
+* Installerar NuGet
+* Anger Port-namnen i json filer för varje projekt, BatteryAndGPSComponentSimulator COM1 och VehicleComController COM2
